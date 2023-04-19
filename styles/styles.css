@@ -49,10 +49,12 @@ h1 {
     text-align: center;
     padding-left: 115px;
     padding-top: 35px;
+    color: black;
 }
 h2 {
     font-size: 36px;
     padding-bottom: 12px;
+    color: black;
 }
 .large-text {
     font-size: 24px;
@@ -64,6 +66,7 @@ h2 {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    color: black;
 }
 .fake-button:hover{
     text-decoration: underline;
@@ -73,6 +76,7 @@ h2 {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -122,9 +126,8 @@ main{
 }
 body h2{
     line-height: 36px;
-    text-align: center;
 }
-body p{
+.index {
     padding-bottom: 12px;
 }
 body .fake-button{
@@ -167,41 +170,47 @@ body .fake-button{
     justify-content: center;
     padding-bottom: 12px;
     gap: 20px;
+    box-sizing: border-box;
+}
+.booking-page p:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .booking-page li:nth-child(1){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .booking-page li:nth-child(2){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .booking-page li:nth-child(3){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .booking-page li:nth-child(4){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .booking-page li:nth-child(5){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #clear-button{
     width: 200px;
@@ -211,8 +220,15 @@ body .fake-button{
     justify-content: center;
     margin-left: 200px;
 }
-
-
+.booking-page p span:not(#calculated-cost){
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+}
+.booking-page p span:not(#calculated-cost):checked{
+    background-color: #E5AF42;
+}
 
 
 
@@ -230,18 +246,54 @@ body .fake-button{
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-main #contact-page .flex{
-    line-height: 420px;
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 235px;
+}
+.flex2:nth-child(1){
+    gap: 24px;
+}
+.flex2:nth-child(3){
+    gap: 24px;
+}
+.flex2:nth-child(2){
+    gap: 24px;
+}
+
+.contact h2{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
-main #contact-page .labels{
-    width: 150px;
-    justify-content: right;
+#contact-page{
+    height: 420px;
 }
-.labels input{
+#contact-page input{
+    display: flex;
+    flex-direction: column;
     width: 300px;
     column-gap: 24px;
+    justify-content: center;
+    font-size: 16px;
 }
-
-
+#user-message{
+    height: 150px;
+    width: 302px;
+}
+#submit-button{
+    margin-top: 12px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-left: 408px;
+    width: 307.33px;
+}
+.contact p {
+    text-align: center;
+    font-size: 24px;
+}
 
