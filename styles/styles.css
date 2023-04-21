@@ -171,6 +171,7 @@ body .fake-button{
     padding-bottom: 12px;
     gap: 20px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .booking-page p:nth-child(2){
     display: flex;
@@ -181,36 +182,31 @@ body .fake-button{
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 60px;
 }
 .booking-page li:nth-child(2){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 60px;
 }
 .booking-page li:nth-child(3){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 60px;
 }
 .booking-page li:nth-child(4){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 60px;
 }
 .booking-page li:nth-child(5){
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 60px;
 }
 #clear-button{
     width: 200px;
@@ -219,6 +215,7 @@ body .fake-button{
     text-align: center;
     justify-content: center;
     margin-left: 200px;
+    cursor: pointer;
 }
 .booking-page p span:not(#calculated-cost){
     border-color: black;
@@ -229,7 +226,17 @@ body .fake-button{
 .booking-page p span:not(#calculated-cost):checked{
     background-color: #E5AF42;
 }
-
+#full {
+    width: 60px;
+    cursor: pointer;
+}
+#half {
+    width: 60px;
+    cursor: pointer;
+}
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
